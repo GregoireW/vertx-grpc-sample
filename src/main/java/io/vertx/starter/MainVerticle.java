@@ -27,7 +27,7 @@ public class MainVerticle extends AbstractVerticle {
 
 
     VertxServer rpcServer = VertxServerBuilder
-      .forAddress(vertx, "localhost", 8080)
+      .forAddress(vertx, "0.0.0.0", 8080)
       .addService(service)
       .build();
 
