@@ -27,10 +27,8 @@ public class ClientTest extends AbstractVerticle {
 
     HelloRequest request = HelloRequest.newBuilder().setName("you").build();
 
-    stub.sayHello(reques
-
-      t, ar -> {
-      if (ar.succeeded())
+    stub.sayHello(request, ar -> {
+      if (ar.succeeded()) {
         System.out.println("OK: " + ar.result().getMessage());
       } else {
         System.out.println("Error: " + ar.cause().getMessage());
