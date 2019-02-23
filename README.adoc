@@ -1,0 +1,13 @@
+= Example for GRPC server/client with vert.x
+
+== Proto
+
+Simple Greeter proto (sayHello service)
+
+== Class
+
+MainVerticle: Simple Grpc server.
+ClientTest: simple and stupid test.
+
+
+
